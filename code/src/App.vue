@@ -380,10 +380,6 @@ const dblclickEvent = (e) => {
       restoreHeart();
     }
   }
-  if (index.value > scenes.length - 1) {
-    index.value = 0;
-    restoreHeart();
-  }
   scenes[index.value].callback();
   setTimeout(() => {
     isAnimate = false;  // 间隔一秒，防止滚动多次
